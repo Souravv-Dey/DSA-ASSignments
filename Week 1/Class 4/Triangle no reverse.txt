@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class TriangleNumRev1 {
+
+	private static Scanner sc;
+	
+	public static void main(String[] args) {
+		sc = new Scanner(System.in);
+		
+		System.out.print("Enter Triangle of Numbers in Reverse Rows = ");
+		int rows = sc.nextInt();
+		
+		System.out.println("Triangle of Numbers in Reverse Order Pattern");
+		
+		for (int i = rows; i >= 1; i-- ) 
+		{
+			for (int j = 1; j < i; j++ ) 
+			{
+				System.out.print(" ");
+			}
+			for(int k = i; k <= rows; k++) 
+			{
+				System.out.print(k + " ");
+			}
+			System.out.println();
+		}
+	}
+}
